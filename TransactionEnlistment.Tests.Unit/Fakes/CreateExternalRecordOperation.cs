@@ -38,7 +38,7 @@ namespace TransactionEnlistment.Tests.Unit.Fakes
 
         public void Dispose()
         {
-
+            //Don't dispose the HttpClient here, as the caller maybe rolling back multiple operations    
         }
     }
 }
