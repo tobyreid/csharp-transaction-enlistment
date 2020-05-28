@@ -63,7 +63,7 @@ namespace TransactionEnlistment
         }
         private void DisposeJournal()
         {
-            // Roll back journal items in reverse order
+            // Dispose journal items in reverse order
             for (var i = _journal.Count - 1; i >= 0; i--)
             {
                 var disposable = _journal[i] as IDisposable;
